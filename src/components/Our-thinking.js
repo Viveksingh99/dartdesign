@@ -1,167 +1,201 @@
+"use client";
 import React from "react";
+import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Ourthinking = () => {
   return (
     <div>
-      <section class="blog-modern section-padding sub-bg">
-        <div class="container">
-          <div class="main-marq lrg pb-3">
-            <div class="st1">
-              <div class="box pb-20 text-center">
-                <div class="item border-none">
+      <section className="blog-modern section-padding sub-bg">
+        <div className="container">
+          <div className="main-marq lrg pb-3">
+            <div className="st1">
+              <div className="box pb-20 text-center">
+                <div className="item border-none">
                   <div>OUR THINKING</div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="blog-carsouel"
+            className="blog-carsouel"
             data-carousel="swiper"
-            data-items="3"
+            data-items={3}
             data-loop="true"
-            data-space="10"
-            data-speed="1000"
+            data-space={10}
+            data-speed={1000}
             data-autoplay="true"
           >
             <div
               id="content-carousel-container-unq-blog"
-              class="swiper-container"
+              className="swiper-container"
               data-swiper="container"
             >
-              <div class="swiper-wrapper curs-scroll">
-                <div class="swiper-slide wow fadeInUp" data-wow-delay=".1s">
-                  <div class="item">
-                    <div class="cont mt-30">
-                      <div class="fz-20 fw-500 pb-2">
-                        <a href="https://www.dartdesign.in/how-does-branding-get-drained-away-in-india-without-giving-the-roi.php">
-                          How does branding get drained away in India without
-                          giving the ROI?
-                        </a>
+              <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 2500,
+                }}
+                modules={[Autoplay]}
+                className="mySwiper"
+              >
+                <div className="swiper-wrapper curs-scroll">
+                  <div
+                    className="swiper-slide wow fadeInUp"
+                    data-wow-delay=".1s"
+                  >
+                    <SwiperSlide>
+                      <div className="item">
+                        <div className="cont mt-30">
+                          <div className="fz-20 fw-500 pb-2">
+                            <Link href="/">
+                              How does colour psychology in retail design
+                              establish brand identity to influence customer
+                              behaviour?
+                            </Link>
+                          </div>
+                          <div>
+                            <p>
+                              With high competition in the market, it becomes
+                              crucial for brands to explore all possible ways
+                              they can create a differentiating image for
+                              themsel...
+                            </p>
+                          </div>
+                          <Link href="/" className="blog__section">
+                            <span className="fz-12 text-u">Explore More</span>
+                            <span className="arrow-icon">&gt;</span>
+                          </Link>
+                        </div>
                       </div>
-                      <div>
-                        <p>
-                          Branding in the Indian Market presents a multifaceted
-                          challenge, despite considerable efforts and
-                          investments made by brands with the objecti...
-                        </p>
+                    </SwiperSlide>
+                  </div>
+                  <div
+                    className="swiper-slide wow fadeInUp"
+                    data-wow-delay=".1s"
+                  >
+                    <SwiperSlide>
+                      <div className="item">
+                        <div className="cont mt-30">
+                          <div className="fz-20 fw-500 pb-2">
+                            <Link href="/">
+                              How does branding get drained away in India
+                              without giving the ROI?
+                            </Link>
+                          </div>
+                          <div>
+                            <p>
+                              <span>
+                                Branding in the Indian Market presents a
+                                multifaceted challenge, despite considerable
+                                efforts and investments made by brands with the
+                                objecti...
+                              </span>
+                            </p>
+                          </div>
+                          <Link href="/" className="blog__section">
+                            <span className="fz-12 text-u">Explore More</span>
+                            <span className="arrow-icon">&gt;</span>
+                          </Link>
+                        </div>
                       </div>
-                      <a
-                        href="https://www.dartdesign.in/how-does-branding-get-drained-away-in-india-without-giving-the-roi.php"
-                        class="blog__section"
-                      >
-                        <span class="fz-12 text-u">Explore More</span>
-                        <span class="arrow-icon">arrow</span>
-                      </a>
-                    </div>
+                    </SwiperSlide>
+                  </div>
+                  <div
+                    className="swiper-slide wow fadeInUp"
+                    data-wow-delay=".1s"
+                  >
+                    <SwiperSlide>
+                      <div className="item">
+                        <div className="cont mt-30">
+                          <div className="fz-20 fw-500 pb-2">
+                            <Link href="/">
+                              Exploring The Future of Mobility For New-Age
+                              Businesses
+                            </Link>
+                          </div>
+                          <div>
+                            <p>
+                              As the mobility sector undergoes significant
+                              transformation due to rapid technological
+                              advancements, the revolutionization continues to
+                              fuel innova...
+                            </p>
+                          </div>
+                          <Link href="/" className="blog__section">
+                            <span className="fz-12 text-u">Explore More</span>
+                            <span className="arrow-icon">&gt;</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div
+                    className="swiper-slide wow fadeInUp"
+                    data-wow-delay=".1s"
+                  >
+                    <SwiperSlide>
+                      <div className="item">
+                        <div className="cont mt-30">
+                          <div className="fz-20 fw-500 pb-2">
+                            <Link href="/">
+                              Exploring new dimensions in luxury interior design
+                              with branding agency
+                            </Link>
+                          </div>
+                          <div>
+                            <p>
+                              In the presently evolving era where newly emerging
+                              trends like quiet luxury continues to define the
+                              dynamics in the niche segment, driving brands t...
+                            </p>
+                          </div>
+                          <Link
+                            href="https://www.dartdesign.in/exploring-new-dimensions-in-luxury-interior-design-with-branding-agency.php"
+                            className="blog__section"
+                          >
+                            <span className="fz-12 text-u">Explore More</span>
+                            <span className="arrow-icon">&gt;</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div
+                    className="swiper-slide wow fadeInUp"
+                    data-wow-delay=".1s"
+                  >
+                    <SwiperSlide>
+                      <div className="item">
+                        <div className="cont mt-30">
+                          <div className="fz-20 fw-500 pb-2">
+                            <Link href="/">
+                              Revolutionising The Practice of Retail Design With
+                              AI
+                            </Link>
+                          </div>
+                          <div>
+                            <p>
+                              In the ever-evolving landscape of retail where
+                              incredible in-store experiences makes a lasting
+                              impact on customers’ conscience, Artificial In...
+                            </p>
+                          </div>
+                          <Link href="/" className="blog__section">
+                            <span className="fz-12 text-u">Explore More</span>
+                            <span className="arrow-icon">&gt;</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
                   </div>
                 </div>
-                <div class="swiper-slide wow fadeInUp" data-wow-delay=".1s">
-                  <div class="item">
-                    <div class="cont mt-30">
-                      <div class="fz-20 fw-500 pb-2">
-                        <a href="https://www.dartdesign.in/exploring-the-future-of-mobility-for-new-age-businesses.php">
-                          Exploring The Future of Mobility For New-Age
-                          Businesses
-                        </a>
-                      </div>
-                      <div>
-                        <p>
-                          As the mobility sector undergoes significant
-                          transformation due to rapid technological
-                          advancements, the revolutionization continues to fuel
-                          innova...
-                        </p>
-                      </div>
-                      <a
-                        href="https://www.dartdesign.in/exploring-the-future-of-mobility-for-new-age-businesses.php"
-                        class="blog__section"
-                      >
-                        <span class="fz-12 text-u">Explore More</span>
-                        <span class="arrow-icon">arrow</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide wow fadeInUp" data-wow-delay=".1s">
-                  <div class="item">
-                    <div class="cont mt-30">
-                      <div class="fz-20 fw-500 pb-2">
-                        <a href="https://www.dartdesign.in/exploring-new-dimensions-in-luxury-interior-design-with-branding-agency.php">
-                          Exploring new dimensions in luxury interior design
-                          with branding agency
-                        </a>
-                      </div>
-                      <div>
-                        <p>
-                          In the presently evolving era where newly emerging
-                          trends like quiet luxury continues to define the
-                          dynamics in the niche segment, driving brands t...
-                        </p>
-                      </div>
-                      <a
-                        href="https://www.dartdesign.in/exploring-new-dimensions-in-luxury-interior-design-with-branding-agency.php"
-                        class="blog__section"
-                      >
-                        <span class="fz-12 text-u">Explore More</span>
-                        <span class="arrow-icon">arrow</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide wow fadeInUp" data-wow-delay=".1s">
-                  <div class="item">
-                    <div class="cont mt-30">
-                      <div class="fz-20 fw-500 pb-2">
-                        <a href="https://www.dartdesign.in/revolutionising-the-practice-of-retail-design-with-ai.php">
-                          Revolutionising The Practice of Retail Design With AI
-                        </a>
-                      </div>
-                      <div>
-                        <p>
-                          In the ever-evolving landscape of retail where
-                          incredible in-store experiences makes a lasting impact
-                          on customers&rsquo; conscience, Artificial In...
-                        </p>
-                      </div>
-                      <a
-                        href="https://www.dartdesign.in/revolutionising-the-practice-of-retail-design-with-ai.php"
-                        class="blog__section"
-                      >
-                        <span class="fz-12 text-u">Explore More</span>
-                        <span class="arrow-icon">arrow</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide wow fadeInUp" data-wow-delay=".1s">
-                  <div class="item">
-                    <div class="cont mt-30">
-                      <div class="fz-20 fw-500 pb-2">
-                        <a href="https://www.dartdesign.in/unraveling-the-strategic-synergy-between-btl-and-retail-agency.php">
-                          Unraveling The Strategic Synergy Between BTL and
-                          Retail Agency
-                        </a>
-                      </div>
-                      <div>
-                        {/* <p style="margin: 0cm; margin-bottom: 0.0001pt;" /> */}
-                        {/* <span
-                          lang="en-gb"
-                          style="color: #0e101a;"
-                          xml:lang="en-gb"
-                        /> */}
-                        In the ever-evolving landscape of B2B mar...
-                      </div>
-                      <a
-                        href="https://www.dartdesign.in/unraveling-the-strategic-synergy-between-btl-and-retail-agency.php"
-                        class="blog__section"
-                      >
-                        <span class="fz-12 text-u">Explore More</span>
-                        <span class="arrow-icon">arrow</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </Swiper>
             </div>
           </div>
         </div>

@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Ourclients = () => {
   return (
@@ -36,213 +40,279 @@ const Ourclients = () => {
                   data-swiper="container"
                 >
                   <div className="swiper-wrapper curs-scroll">
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/adidas.webp"
-                        alt="Adidas"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/bluestar.webp"
-                        alt="Bluestar"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/dolce-gelato.webp"
-                        alt="Dolce Gelato"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/firebox.webp"
-                        alt="Firebox"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/godrej.webp"
-                        alt="Godrej"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/hitachi.webp"
-                        alt="Hitachi"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/indianmotorcycle.webp"
-                        alt="Indianmotorcycle"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/itc.webp"
-                        alt="ITC"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/ith.webp"
-                        alt="ITH"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/jsw.webp"
-                        alt="JSW"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/it.webp"
-                        alt="I&amp;T"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/laatsaab.webp"
-                        alt="Laatsaab"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/latinsquarter.webp"
-                        alt="Latinsquarter"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/lloyd.webp"
-                        alt="LLOYD"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/mitsubishi.webp"
-                        alt="MITSUBISHI"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/mobil.webp"
-                        alt="Mobil"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/niit.webp"
-                        alt="NIIT"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/patanjali.webp"
-                        alt="Patanjali"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/redchief.webp"
-                        alt="Redchief"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/studds.webp"
-                        alt="Studds"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/tata-steel.webp"
-                        alt="Tata Steel"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/tvs.webp"
-                        alt="TVS"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
-                    <div className="swiper-slide">
-                      <Image
-                        className="client-images"
-                        src="https://www.dartdesign.in/images/clients/vlcc.webp"
-                        alt="VLCC"
-                        width={200}
-                        height={200}
-                      />
-                    </div>
+                    <Swiper
+                      spaceBetween={40}
+                      slidesPerView={3}
+                      autoplay={{
+                        delay: 3000,
+                      }}
+                      modules={[Autoplay]}
+                    >
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/adidas.webp"
+                            alt="Adidas"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/bluestar.webp"
+                            alt="Bluestar"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/dolce-gelato.webp"
+                            alt="Dolce Gelato"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/firebox.webp"
+                            alt="Firebox"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/godrej.webp"
+                            alt="Godrej"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/hitachi.webp"
+                            alt="Hitachi"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/indianmotorcycle.webp"
+                            alt="Indianmotorcycle"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/itc.webp"
+                            alt="ITC"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/ith.webp"
+                            alt="ITH"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/jsw.webp"
+                            alt="JSW"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/it.webp"
+                            alt="I&amp;T"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/laatsaab.webp"
+                            alt="Laatsaab"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/latinsquarter.webp"
+                            alt="Latinsquarter"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/lloyd.webp"
+                            alt="LLOYD"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/mitsubishi.webp"
+                            alt="MITSUBISHI"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/mobil.webp"
+                            alt="Mobil"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/niit.webp"
+                            alt="NIIT"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/patanjali.webp"
+                            alt="Patanjali"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/redchief.webp"
+                            alt="Redchief"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/studds.webp"
+                            alt="Studds"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/tata-steel.webp"
+                            alt="Tata Steel"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/tvs.webp"
+                            alt="TVS"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <Image
+                            className="client-images"
+                            src="https://www.dartdesign.in/images/clients/vlcc.webp"
+                            alt="VLCC"
+                            width="200"
+                            height="200"
+                          />
+                        </div>
+                      </SwiperSlide>
+                    </Swiper>
                   </div>
                 </div>
               </div>
